@@ -11,7 +11,7 @@ public class ArabicParser extends Parser {
 
         try {
             Integer.parseInt(strNumber);
-            if (Integer.parseInt(strNumber) > 10 || Integer.parseInt(strNumber) < 0)
+            if (Integer.parseInt(strNumber) > 10 || Integer.parseInt(strNumber) <=0)
                 throw new IllegalArgumentException("Число не должно выходить за пределы диапозона от 1 до 10!");
             return true;
         } catch (NumberFormatException e) {

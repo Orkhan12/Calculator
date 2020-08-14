@@ -39,7 +39,7 @@ public class RomeParser extends Parser {
         basicValidation(strNumber);
         try {
             Number number = parse(strNumber);
-            if (number.getValue() > 10 || number.getValue() < 0) {
+            if (number.getValue() > 10 || number.getValue() <= 0 ) {
                 throw new IllegalArgumentException("Число не должно выходить за пределы диапозона от I до X!");
             }
             return true;
